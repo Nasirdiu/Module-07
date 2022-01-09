@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criket</title>
+    <style>
+        .field{
+            border: 1px solid ;
+        }
+.field:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.bat{
+    width: 300px;
+    height: 300px;
+    transition: transform 0.2s ease-in;
+}
+.field:hover .ball{
+    transform: translate(870px ,-350px);
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    position: relative;
+    left: 420px;
+    transition: transform 1s ease-out 0.2s;
+}
+.field:hover .bat-2 {
+    transform: rotate(20deg);
+    transform-origin:top right;
+    float: right;
+}
+
+.bat-2{
+    width: 300px;
+    height: 300px;
+    transition: transform 0.2s ease-in;
+}
+    </style> 
+</head>
+<body>
+    <h1>Criket</h1>
+    <div class="field">
+        <img class="bat" src="images/27160_600x.jpg" alt="">
+        <img class="bat-2" src="images/27160_600x.jpg" alt="">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
